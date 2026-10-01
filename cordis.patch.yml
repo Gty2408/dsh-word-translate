@@ -1,0 +1,6 @@
+# Register the word-translate plugin. It adds one loopback-only translate route
+# on the Host and one frame-wide overlay entry in the Web client; it changes no
+# shipped entry and no model default.
+- insert:
+    - id: dsh-word-translate
+      name: dsh-word-translate

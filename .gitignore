@@ -1,0 +1,17 @@
+# Nothing in this package is generated at install time, so there is little to
+# ignore. The one entry that matters is the unpacked ECDICT source: it is 63 MB,
+# it is not needed at runtime, and `tools/build-dict.mjs` reproduces
+# `data/dict.json` from it in about two seconds.
+
+# ECDICT source CSV (re-download, then rebuild — see data/NOTICE.md)
+ecdict.csv
+
+# Editor and OS noise
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Local npm state
+node_modules/
+npm-debug.log*

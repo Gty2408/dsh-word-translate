@@ -1,0 +1,51 @@
+{
+  "name": "dsh-word-translate",
+  "displayName": "DSH Word Translate",
+  "description": "Right-click selected English in the DSH Web UI for a bundled offline dictionary (POS, phonetics, Collins rating, exam tags, frequency rank), a context-aware AI translation, and speech playback. Translations are saved to a searchable history.",
+  "version": "1.6.0",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gty2408/dsh-word-translate.git"
+  },
+  "homepage": "https://github.com/Gty2408/dsh-word-translate#readme",
+  "bugs": {
+    "url": "https://github.com/Gty2408/dsh-word-translate/issues"
+  },
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "data",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh",
+    "translate",
+    "translation",
+    "dictionary",
+    "vocabulary",
+    "english-learning",
+    "text-to-speech"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  }
+}
